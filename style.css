@@ -1,0 +1,126 @@
+body{
+	background-image: url(images/flowerb.jpg);
+
+}
+
+.slideshow_container{
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+h1{
+	color: red;
+
+}
+
+img{
+	max-width: 500px;
+}
+
+.pic1{
+	width: 50%;
+	padding: 10px;
+	margin: 2px;
+	position: relative;
+}
+
+.pic2{
+	width: 60%;
+	padding: 10px;
+	margin: 2px;
+	position: relative; bottom: 300px;
+	left: 500px;
+}
+
+.pic3{
+	width: 30%;
+	padding: 10px;
+	margin: 2px;
+	position: relative; bottom: 70px;
+}
+
+.pic4{
+	width: 50%;
+	padding: 10px;
+	margin: 2px;
+	position: relative; bottom: 350px;
+}
+
+.pic5{
+	width: 30%;
+	padding: 10px;
+	margin: 2px;
+	position: relative;bottom: 200px;
+}
+
+.slide2{
+	display: none;
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+div{
+	display: inline-block;
+}
+
+.prev,.next{
+	cursor:pointer;
+	position: absolute;
+	top:50%;
+	width:auto;
+	margin-top: -22px;
+	padding:16px;
+	color:white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: .6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+.next{
+	right:0;
+	border-radius: 3px 0 0 3px;
+}
+
+.dots{
+	text-align: center;
+}
+
+.prev:hover, .next:hover{
+	background-color: rgba(0,0,0,0.8)
+}
+
+.text{
+	color:green;
+	font-size:15px;
+	padding:8px 12px;
+	position: absolute;
+	bottom:8px;
+	width:100%;
+	text-align: center;
+}
+
+.dot{
+	cursor: pointer;
+	height:15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: blue;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.active, .dot:hover{
+	background-color: red;
+}
+
+.fade{
+	animation-name: fade;
+	animation-duration: 1s;
+}
+
+@keyframes fade{
+	from{opacity:.5;}
+	to{opacity: 1}
+}
